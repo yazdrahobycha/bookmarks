@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
 
 :root {
-    --primary-color: pink;
-    --secondary-color: rgb(203, 133, 144);
-    --tetrary-color: rgb(86, 44, 44);
+    --primary-color: #08D9D6;
+    --secondary-color: #FF2E63;
+    --tetrary-color: #F6F6F6;
+    --background-color: #8785A2;
 }
 
 html {
@@ -14,25 +15,7 @@ body {
     font-family: Kanit, sans-serif;
     margin: 0;
     min-height: 100vh;
-    background-image: linear-gradient(
-        295deg,
-        hsl(240deg 100% 20%) 0%,
-        hsl(45deg 20% 43%) 7%,
-        hsl(52deg 46% 50%) 13%,
-        hsl(54deg 77% 54%) 20%,
-        hsl(56deg 91% 61%) 27%,
-        hsl(80deg 79% 75%) 33%,
-        hsl(138deg 84% 80%) 40%,
-        hsl(170deg 97% 68%) 47%,
-        hsl(179deg 83% 64%) 53%,
-        hsl(198deg 61% 74%) 60%,
-        hsl(269deg 45% 75%) 67%,
-        hsl(307deg 67% 65%) 73%,
-        hsl(319deg 45% 68%) 80%,
-        hsl(79deg 19% 66%) 87%,
-        hsl(109deg 64% 65%) 93%,
-        hsl(107deg 100% 50%) 100%
-    );
+    background-color: var(--background-color);
 }
 
 h1 {
@@ -80,7 +63,7 @@ h1:active {
     background-color: var(--secondary-color);
     padding: 1rem;
     border-radius: 20px;
-    box-shadow: 5px 5px 0 var(--tetrary-color);
+    box-shadow: 5px 5px 0 var(--background-color);
 }
 
 .name {
@@ -218,6 +201,6 @@ button:hover {
     }
 
     .modal {
-      width: 80%;
+        width: 80%;
     }
 }
